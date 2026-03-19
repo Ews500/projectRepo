@@ -20,8 +20,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: HTML5 Validator
-        uses: Cyb3r-Jak3/html5validator-action@master
+      - name: HTML5Validator
+        uses: Cyb3r-Jak3/html5validator-action
         with:
          root: app/
 
