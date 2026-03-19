@@ -37,4 +37,4 @@ jobs:
           context: .
           push: true
           platforms: linux/arm64
-          tags: ghcr.io/ews500/app:${{ github.sha }}
+          tags: ghcr.io/ews500/projectrepo/app:${{ github.sha }}
