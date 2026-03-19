@@ -21,9 +21,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Lint HTML
-        uses: Cyb3r-Jak3/html5validator-action
+        uses: Cyb3r-Jak3/HTMLHint-action@v1
         with:
-          root: app/
+          files: "app/**/*.html"
+
 
       # Set up Docker Buildx 
       - name: Set up Docker Buildx
