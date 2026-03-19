@@ -16,16 +16,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout repo
+      # Checkout repo
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Validate HTML
-        uses: svenkreiss/html5validator@v0.4.0
-        with:
-         root: app
-
-
+        # Lint HTML files
+      - name: Lint HTML
+        run: npx htmlhint "app/**/*.html"
 
       # Set up Docker Buildx 
       - name: Set up Docker Buildx
