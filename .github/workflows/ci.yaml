@@ -20,10 +20,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Lint HTML
-        uses: Cyb3r-Jak3/HTMLHint-action@v1
+      - name: HTML5 Validator
+        uses: Cyb3r-Jak3/html5validator-action@master
         with:
-          files: "app/**/*.html"
+         root: app/
 
 
       # Set up Docker Buildx 
