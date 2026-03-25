@@ -1,14 +1,60 @@
-<!DocType HTML> 
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CI/CD Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My DevOps App</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple HTML document. 1 </p>
-    <p>Here is some more text. 2s</p>
-    <p>Pipeline test</p>
+
+  <header>
+    <h1>🚀 My DevOps App</h1>
+    <p>CI/CD with Docker, Kubernetes & ArgoCD</p>
+  </header>
+
+  <main>
+
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>This application demonstrates a full CI/CD pipeline using modern DevOps tools.</p>
+    </section>
+
+    <section class="cards">
+
+      <div class="card">
+        <h3>🐳 Docker</h3>
+        <p>Containerises the application to ensure consistent environments across development and production.</p>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes</h3>
+        <p>Orchestrates container deployment, scaling, and management within the cluster.</p>
+      </div>
+
+      <div class="card">
+        <h3>GitHub Actions</h3>
+        <p>Automates the CI pipeline including linting, building, and pushing container images.</p>
+      </div>
+
+      <div class="card">
+        <h3>ArgoCD</h3>
+        <p>Implements GitOps by automatically syncing Kubernetes manifests with the cluster state.</p>
+      </div>
+
+      <div class="card">
+        <h3>GHCR</h3>
+        <p>GitHub Container Registry stores and manages versioned Docker images.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built by Ewan Davies</p>
+  </footer>
+
 </body>
-</html> 
+</html>
