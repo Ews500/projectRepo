@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/ews500/projectrepo/app:ed44f3eb33a19803d68b63732fcb7d34f3d2b91e
+        image: ghcr.io/ews500/projectrepo/app:14f4f2025f97e741c1dfb23f33bc2b0b40f1ccac
         ports:
         - containerPort: 80
         resources:
